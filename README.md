@@ -1,6 +1,12 @@
 # TP Coding Exercise
 
-## Instructions
+## Installation Instructions
+To run the app in development mode:
+`npm start` or `yarn start`
+
+Open http://localhost:3000 to view it in the browser.
+
+## Exercise Instructions
 - Use the Reddit API to query r/aww and implement infinite scrolling with a list of results.
 - On initial page load, the app should automatically retrieve the first 25 records.
 - When you scroll to the end of the list, load 25 more records.
