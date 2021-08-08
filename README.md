@@ -1,6 +1,9 @@
 # TP Coding Exercise
 
-## Installation Instructions
+## Install and Run Instructions
+To install the app:
+`npm install` or `yarn install`
+
 To run the app in development mode:
 `npm start` or `yarn start`
 
@@ -15,3 +18,9 @@ Open http://localhost:3000 to view it in the browser.
 - You must use at least two different components (ex: reddit-list-item, reddit-list-container.)
 - You can use any framework you prefer, do not use any other external libraries or plugins to create the infinite scroll logic or any other interactive mechanics
 - include installation and running instructions, host the solution on a git-supported platform (github, bitbucket etc)
+
+## Notes
+- ALT tag - best to include some text that describes the image, however, no such text is provided from the api
+
+## Improvements
+- Replace 'Loading more items...' with a spinner
