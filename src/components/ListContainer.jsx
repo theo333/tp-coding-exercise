@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ListItem from './ListItem';
 
 
 const ListContainer = () => {
@@ -33,15 +34,7 @@ const ListContainer = () => {
 	return (
 		<ul className="reddit-list">
 			{rList && rList.map(item => {
-				const {id, title, subreddit_name_prefixed, thumbnail, permalink} = item.data;
-				const baseUrl = "https://reddit.com/"
-				return (
-					<li className="reddit-list-item" key={id}>
-						<a href={baseUrl + permalink} alt="" target="_blank">{title}</a>
-						{subreddit_name_prefixed}
-						<img src={thumbnail} />
-					</li>
-				);
+				return <ListItem item={item} key={item.data.id}/>
 			})}
 		</ul>
 	);
