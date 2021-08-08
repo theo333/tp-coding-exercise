@@ -8,8 +8,10 @@ const ListItem = ({item}) => {
 		<li className="reddit-list-item" key={id}>
 			<p><a href={baseUrl + permalink} target="_blank" rel="noreferrer">{title}</a></p>
 			<div className="reddit-list-item-right">
-				<p>{subreddit_name_prefixed}</p>
 				<img src={thumbnail} alt="" width={thumbnail_width} height={thumbnail_height}/>
+				<p>
+					<a href={baseUrl + subreddit_name_prefixed} target="_blank" rel="noreferrer">{subreddit_name_prefixed}</a>
+				</p>
 			</div>
 		</li>
 	);

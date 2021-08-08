@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ListItem from './ListItem';
-
+import './ListContainer.css';
 
 const ListContainer = () => {
 	const [rList, setRList] = useState([]);
