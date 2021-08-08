@@ -1,0 +1,22 @@
+.reddit-list-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+	border: solid 1px black;
+	border-radius: .5rem;
+	margin: 16px 0;
+	padding: 12px;
+}
+
+.reddit-list-item-right {
+	display: flex;
+	align-items: center;
+	margin-left: 8px;
+}
+
+.reddit-list-item-right img {
+	margin-left: 20px;
+	border-radius: .5rem;
+}
